@@ -2,25 +2,210 @@
 <html>
   <head>
     <style>
-      .p {
-	  width: 500px;
-	  height: 500px;
-	  border-radius: 250px;
+      html, body {
+          margin: 0;
+          padding: 0;
+      }
+
+      em {
+          font-weight: bold;
+      }
+
+      .left {
+          width: 40%;
+          background: #8b4513;
+          height: 2700px;
+      }
+
+      .right {
+          width: 60%;
+          height: 100%;
+      }
+
+      img {
+          width: 300px;
+          height: 300px;
+          border-radius: 150px;
+          margin: auto;
+      }
+
+      #profile-name {
+          color: #a0522d;
+          font-weight: bold;
+          font-size: 45px;
+          margin: auto;
+          font-family: Georgia, serif;
+      }
+
+      .container {
+          display: flex;
+          border: 2px solid #d2691e;
+      }
+
+      .lf {
+          margin: auto;
+          color: #f8f8ff;
+          font-weight: bold;
+          font-size: 35px;
+      }
+
+      .rf {
+          margin: auto;
+          font-weight: bold;
+          color: #a0522d;
+          letter-spacing: 1px;
+          font-size: 35px;
+          background: #f8f8ff;
+      }
+
+      #img-container {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+      }
+
+      .name-container {
+          margin-top: 40px;
+          margin-left: 25px;
+          flex-direction: column;
+      }
+
+      #title {
+          color: #d2691e;
+          margin: auto;
+          font-size: 25px;
+      }
+
+      .options-c {
+          padding-left: 25px;
+          padding-right: 15px;
+          flex-direction: column;
+          margin-top: 40px;
+      }
+
+      .c {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 25px;
+      }
+
+      dt, em {
+      font-size: 30px;
+      }
+
+      dd, li {
+          font-size: 25px;
+      }
+
+      .ldt {
+          font-weight: bold;
+          padding: 5px;
+          color: #fff;
+      }
+
+      .ldd, .lli {
+          color: #fff;
       }
     </style>
   </head>
   <body>
-    <center>
-    <div id="profile-container">>
-      <img class="p" src="./images/thirdy.jpg" alt="image"/>
-      <h1>Mirwin Joash Aaron B. Salva</h1>
-    </div>
-    </center>
-    <div id="menu-container">
-      <a href="#">About me</a>
-      <a href="#">Technologies</a>
-      <a href="#">My Projects</a>
+    <div class="container">
+      <div class="left">
+	<div id="img-container">
+	  <img src="./images/jay.jpg" alt="my profile picture"/>
+	</div>
+	<br><br>
+	<div class="options-c">
+	  <h2 class="lf">Contact me at</h2>
+	  <dl>
+	    <dt class="ldt">Email</dt>
+	    <dd class="ldd">winsalva396@gmail.com</dd>
+	    <dt class="ldt">Facebook</dt>
+	    <dd class="ldd">https://facebook.com/ton.salva.7?refid=7</dd>
+            <dt class="ldt">Mobile</dt>
+            <dd class="ldd">+63 967-5130-540</dd>
+	  </dl>
+	  <br>
+	  <h2 class="lf">Skills summary</h2>
+          <ul>
+	    <li class="lli">Analytical skills - 95%</li>
+	    <li class="lli">Programming skills - 90%</li>
+            <li class="lli">Communication skills - 90%</li>
+            <li class="lli">Creativity - 90%</li>
+          </ul>
+          <br>
+          <h2 class="lf">Hobbies</h2>
+          <ul>
+            <li class="lli">Programming</li>
+            <li class="lli">Reading books</li>
+            <li class="lli">Watching educational videos</li>
+	    <li class="lli">Googling</li>
+            <li class="lli">Talking to others, sharing knowledge and learning from them</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="name-container">
+          <h1 id="profile-name">WINSTON G. SALVA Jr.</h1>
+          <h2 id="title">FULLSTACK WEB DEVELOPER</h2>
+        </div>
+	<div class="options-c">
+          <h2 class="rf">Personal Profile</h2>
+	  <p class="c">Hello maam/sir,
+	    <br><br>
+	    My name is Winston, a 35 year old person with disability (PWD) who managed to teach myself computer programming for over 4 years now.
+            <br><br>
+            Even being self-taught programmer, i was able to learn technologies that are essential to build complete apps/sites even from scratch (planning, designing, development, deployment).
+            <br><br>
+            Because of my disability and being self-taught, i learned things the hard way, have developed patience, focus, self-motivated, self-disciplined, work with no supervision and ablity to know where to look for solutions.
+	    <br><br>
+            I am comfortable using web technologies such as HTML, CSS, Javascript, Python and Elixir. My current tech stack is Elixir with Phoenix framework.</p>
+	  <h2 class="rf">Work Experience</h2>
+          <ul>
+            <li>I'd be honest, i've no experience yet working on companies but i've already gained many programming experiences thru building personal projects, helping with friends' projects and by helping many college IT students solve their programming problems.</li>
+            <br><br>
+            <li>Through-out my programming journey, i've learned and gained experience using git, Github, the terminal, bash, MVC, FP, ORM, SQL, relational databases (Postgres), REST, unit tests, code documentation, application configuration and many other things necessary for building apps/sites from development to deployment..</li>
+	  </ul>
+	  <br>
+	  <h2 class="rf">Work Accomplishments</h2>
+	  <dl>
+	    <dt>
+	      <em>Social Media Application</em>
+	    </dt>
+	    <dd>- This application works identical to Facebook's timeline with features like user account creation with input validations, authorization and authentication, admin approvals, uploading text, photos and videos, ability to like and comment posts, send friend requests, real-time notifications and many more..</dd>
+            <br>
+            <dt>
+              <em>Video Streaming Application</em>
+            </dt>
+	    <dd>- This application works identical to Youtube. Has features like of my Social Media app but only limited to video uploads. Basic CRUD functionalities complete with user authorization and authentication with real-time notification.</dd>
+            <br>
+            <dt>
+              <em>Blogging Application</em>
+            </dt>
+	    <dd>- Works much like some blogging sites where users can register account, apply as blog writer with admins in control about declining or approving requests from users. Uses markdown for writing and converted into html when rendered. Has different levels of authorization (guest users, registered users, approved blog writers) with admins in control of everything.
+            </dd>
+          </dl>
+	  <h2 class="rf">Educational History</h2>
+          <dl>
+            <dt><strong>College</strong></dt>
+	    <ul>
+	      <li>University of Mindanao</li>
+              <dd>- Computer Technology</dd>
+            </ul>
+          </dl>
+          <dl>
+            <dt><strong>High School</strong></dt>
+            <ul>
+              <li>LaPaz Nat'l High School</li>
+            </ul>
+          </dl>
+          <dl>
+            <dt><strong>Elementary School</strong></dt>
+            <ul>
+              <li>LaPaz Central Elem. School</li>
+            </ul>
+          </dl>
+	</div>
+      </div>
     </div>
   </body>
 </html>
-
