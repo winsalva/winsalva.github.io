@@ -1,46 +1,42 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <style>
       html, body {
           margin: 0;
-          padding: 0;
-      }
+          padding: 0;}
 
-      em {
+      em, a {
           font-weight: bold;
-      }
+	  color: #d2691e;}
 
-      .left {
+      .left-column {
           width: 40%;
           background: #8b4513;
-          height: 2700px;
-      }
+          height: 2700px;}
 
-      .right {
+      .right-column {
           width: 60%;
-          height: 100%;
-      }
+          height: 100%;}
 
       img {
           width: 300px;
           height: 300px;
           border-radius: 150px;
-          margin: auto;
-      }
+          margin: auto;}
 
       #profile-name {
           color: #a0522d;
           font-weight: bold;
           font-size: 45px;
           margin: auto;
-          font-family: Georgia, serif;
-      }
+          font-family: Georgia, serif;}
 
       .container {
           display: flex;
           border: 2px solid #d2691e;
-      }
+	  box-sizing: border-box;}
 
       .lf {
           margin: auto;
@@ -109,7 +105,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="left">
+      <div class="left-column">
 	<div id="img-container">
 	  <img src="./images/my-profile-pic.jpg" alt="my profile picture"/>
 	</div>
@@ -127,10 +123,10 @@
 	  <br>
 	  <h2 class="lf">Skills summary</h2>
           <ul>
-	    <li class="lli">Analytical skills - 95%</li>
-	    <li class="lli">Programming skills - 90%</li>
-            <li class="lli">Communication skills - 90%</li>
-            <li class="lli">Creativity - 90%</li>
+	    <li class="lli">Analytical skills</li>
+	    <li class="lli">Programming skills</li>
+            <li class="lli">Communication skills</li>
+            <li class="lli">Creativity</li>
           </ul>
           <br>
           <h2 class="lf">Hobbies</h2>
@@ -143,13 +139,13 @@
           </ul>
         </div>
       </div>
-      <div class="right">
+      <div class="right-column">
         <div class="name-container">
           <h1 id="profile-name">WINSTON G. SALVA Jr.</h1>
           <h2 id="title">FULLSTACK WEB DEVELOPER</h2>
         </div>
 	<div class="options-c">
-          <h2 class="rf"><a href="https://winstonsalva.gigalixirapp.com/">Personal Profile</a></h2>
+          <h2 class="rf"><a href="https://winston-salva.gigalixirapp.com/">Personal Profile</a></h2>
 	  <p class="c">I'm an honest, focused, self-motivated, self-disciplined self-taught progammer that can work with no supervision and ablity to know where to look for solutions.
 	    <br><br>
             I am comfortable using web technologies such as HTML, CSS, Javascript, Python and Elixir. My current tech stack is Elixir with Phoenix framework.</p>
@@ -160,21 +156,10 @@
 	  <br>
 	  <h2 class="rf">Work Accomplishments</h2>
 	  <dl>
-	    <dt>
-	      <em>Social Media Application</em>
-	    </dt>
-	    <dd>- This application works identical to Facebook's timeline with features like user account creation with input validations, authorization and authentication, admin approvals, uploading text, photos and videos, ability to like and comment posts, send friend requests, real-time notifications and many more..</dd>
-            <br>
             <dt>
-              <em>Video Streaming Application</em>
+              <em><a href="https://myvideo.gigalixirapp.com">Video Streaming Application</a></em>
             </dt>
-	    <dd>- This application works identical to Youtube. Has features like of my Social Media app but only limited to video uploads. Basic CRUD functionalities complete with user authorization and authentication with real-time notification.</dd>
-            <br>
-            <dt>
-              <em><a href="https://winstons.gigalixirapp.com">Blogging Application</a></em>
-            </dt>
-	    <dd>- Works much like some blogging sites where users can register account, apply as blog writer with admins in control about declining or approving requests from users. Uses markdown for writing and converted into html when rendered. Has different levels of authorization (guest users, registered users, approved blog writers) with admins in control of everything.
-            </dd>
+	    <dd>- This video streaming application does'nt host videos but only embeds youtube videos. Users just need to create an account to start uploading youtube links. Basic CRUD functionalities complete with user authorization and authentication by admins</dd>
           </dl>
 	  <h2 class="rf">Educational History</h2>
           <dl>
