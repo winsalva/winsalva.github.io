@@ -1,5 +1,3 @@
-### This serves as my resume
-##### Jokes only..
+### This serve's as my old resume. 
 
-### Kindly visit
-<a href="http://winstonsalva.ml">my portfolio</a>
+For updates about me, kindly visit <a href="http://winstonsalva.ml">my portfolio</a>
